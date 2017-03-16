@@ -3,11 +3,11 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right top;
-    background-attachment: fixed;
+  background-attachment: fixed;
 	color: yellow;
 }
 
-.titles
+.outside
 {
 	position: absolute;
 	width: 18em;
@@ -23,7 +23,7 @@ body {
 	transform: perspective(300px) rotateX(25deg);
 }
 
-.titles:after
+.outside:after
 {
 	position: absolute;
 	content: ' ';
@@ -35,7 +35,7 @@ body {
 	pointer-events: none;
 }
 
-.titlecontent
+.content
 {
 	position: absolute;
 	top: 100%;
