@@ -1,9 +1,9 @@
 body {
-    background-image: url("../images/r2d2background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
+  background-image: url("../images/r2d2background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 	color: yellow;
 	font-family: 'News Cycle', Helvetica;
 	text-align: center;

@@ -1,15 +1,24 @@
 body {
+	font-family: 'News Cycle', Helvetica;
+	color: yellow;
 	background-image: url("../images/star_background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right top;
   background-attachment: fixed;
-	color: yellow;
 }
 
-.outside
+@keyframes crawl {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+#crawl_box
 {
 	position: absolute;
+	overflow: hidden;
+	transform-origin: 50% 100%;
+	transform: perspective(300px) rotateX(25deg);
 	width: 18em;
 	height: 50em;
 	bottom: 0;
@@ -18,46 +27,21 @@ body {
 	font-size: 350%;
 	font-weight: bold;
 	text-align: justify;
-	overflow: hidden;
-	transform-origin: 50% 100%;
-	transform: perspective(300px) rotateX(25deg);
 }
 
-.outside:after
-{
-	position: absolute;
-	content: ' ';
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 60%;
-	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-	pointer-events: none;
-}
-
-.content
+#content
 {
 	position: absolute;
 	top: 100%;
-	animation: scroll 40s linear;
+	animation: crawl 100s linear;
 }
 
-.start_quiz {
-	position: absolute;
-	display: none;
-}
-
-@keyframes scroll {
-	0% { top: 100%; }
-	100% { top: -170%; }
+#center_episode {
+	text-align: center;
+	margin-bottom: 0.4em;
 }
 
 #center_title {
-	font-family: 'News Cycle', Helvetica;
-	font-size: 1.5em;
+	font-size: 1.75em;
 	text-align: center;
-}
-
-#center_body {
-	font-family: 'News Cycle', Helvetica;
 }
